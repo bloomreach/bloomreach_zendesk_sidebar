@@ -1,0 +1,12 @@
+.br_link>img {
+    margin-left:auto !important; 
+    margin-right:auto !important; 
+    display:block !important;
+}
+
+.title_holder{
+    margin-top:10px;
+    width:100%;
+    border-bottom: 1px solid;
+    border-color: grey;
+}

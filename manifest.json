@@ -1,0 +1,53 @@
+{
+  "name": "Bloomreach Engagement Zendesk Sidebar",
+  "author": {
+    "name": "Paul Edwards",
+    "email": "paul@bloomreach.com",
+    "url": "https://www.bloomreach.com"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
+      }
+    }
+  },
+  "version": "1.0.0",
+  "frameworkVersion": "2.0",
+  "parameters": [
+    {
+      "name": "ENGAGEMENT_PROJECT",
+      "type": "text",
+      "secure": false,
+      "required": true
+    },
+    {
+      "name": "ENGAGEMENT_HOSTNAME",
+      "type": "url",
+      "secure": false,
+      "required": true
+    },
+    {
+      "name": "ENGAGEMENT_API_HOSTNAME",
+      "type": "url",
+      "secure": false,
+      "required": true
+    },
+    {
+      "name": "ENGAGEMENT_TOKEN",
+      "type": "text",
+      "secure": true,
+      "required": true
+    },
+    {
+      "name": "ENGAGEMENT_PAYLOAD",
+      "type": "multiline",
+      "secure": false,
+      "required": true
+    }
+  ],
+  "domainWhitelist": ["{{setting.ENGAGEMENT_API_HOSTNAME}}"]
+}

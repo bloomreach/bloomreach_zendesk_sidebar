@@ -20,7 +20,7 @@ Or anything which can be accessed via the Bloomreach Engagement Customer API.
 ![sidebar_widget](./assets/screenshots/sidebar_widget.png)
 ![configuration](./assets/screenshots/config.png)
 
-###installation
+### installation
 
 1) Input your engagement project id - this can be found in the project settings > project_token area of your Engagement project.
 2) Input your engagement hostname. This is the domain of your Engagement admin interface - e.g. demo_project.exponea.com  

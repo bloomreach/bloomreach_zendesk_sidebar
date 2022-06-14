@@ -31,9 +31,9 @@ Or anything which can be accessed via the Bloomreach Engagement Customer API.
 {
   "fields" : [
   {
-	   "type": segmentation, attribute etc,
-	   "id" : the internal Engagement id of the field
-	   "label" : what you want the name to be when display inside Zendesk
+	   "type": "segmentation attribute etc",
+	   "id" : "the internal Engagement id of the field",
+	   "label" : "what you want the name to be when display inside Zendesk"
 	 },
 	 {...},
 	 {...}

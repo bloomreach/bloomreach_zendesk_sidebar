@@ -17,8 +17,8 @@ Or anything which can be accessed via the Bloomreach Engagement Customer API.
     
 ### Screenshots:
 
-![sidebar_widget](./assets/screenshots/sidebar_widget.png)
-![configuration](./assets/screenshots/config.png)
+![sidebar_widget](./assets/screenshots/screenshot-0.png)
+![configuration](./assets/screenshots/screenshot-1.png)
 
 ### installation
 

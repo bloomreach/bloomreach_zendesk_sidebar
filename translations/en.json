@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "Bloomreach Engagement Zendesk Siderbar",
+    "name": "Bloomreach Engagement Zendesk Sidebar",
     "short_description": "Bloomreach Engagement data in your Zendesk Ticket Siderbar.",
     "long_description": "Access any of your customer based Blomreach Engagement data in your Zendesk Ticketing sidebar. Simply and Securely. Click on the Engagement logo to access the full customer record.",
     "installation_instructions": "Please fill in the fields with the relevant fields from your Bloomreach Engagement instance. Engagement payload is a JSON file similar to {'fields':{['type' : 'the type of field inside engagement', 'id': 'the field id inside engagement', 'label' : 'what you want the field to be displayed as on the sidebar']}}. You can display as many fields as you wish. The engagement token is created as a base64 hash of your private and public key. Most easily done from NodeJS REPL using: console.log(Buffer.from('<public_key>:<private_key>').toString('base64'))",

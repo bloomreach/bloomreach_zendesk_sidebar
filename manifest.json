@@ -55,5 +55,7 @@
       "required": true
     }
   ],
-  "domainWhitelist": ["{{setting.ENGAGEMENT_API_HOSTNAME}}"]
+  "domainWhitelist": [
+    "{{setting.ENGAGEMENT_API_HOSTNAME}}"
+  ]
 }

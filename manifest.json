@@ -25,6 +25,12 @@
       "required": true
     },
     {
+      "name": "ENGAGEMENT_PROJECT_NAME",
+      "type": "text",
+      "secure": false,
+      "required": true
+    },
+    {
       "name": "ENGAGEMENT_HOSTNAME",
       "type": "url",
       "secure": false,

@@ -7,7 +7,11 @@
     "parameters": {
       "ENGAGEMENT_PROJECT": {
         "label": "Engagement Project Id",
-        "helpText": "The Id Of you Engagement Project, found on the settings page."
+        "helpText": "The id Of your Engagement Project, found on the settings page."
+      },
+      "ENGAGEMENT_PROJECT_NAME": {
+        "label": "Engagement Project Name",
+        "helpText": "The name of you Engagement Project, found on the settings pages."
       },
       "ENGAGEMENT_HOSTNAME": {
         "label": "Engagement Hostname",

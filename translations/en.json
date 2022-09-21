@@ -31,7 +31,7 @@
       },
       "ENGAGEMENT_PAYLOAD": {
         "label": "Engagement Fields",
-        "helpText": "A JSON document describing the fields you want to display. In the form: {'fields' : [{'type': 'segmentation attribute etc','id' : 'the internal Engagement id of the field','label' : 'what you want the name to be when display inside Zendesk'},{...},{...}]} "
+        "helpText": "A JSON document describing the fields you want to display. In the form: {'fields' : [{'type': 'segmentation attribute etc','id' : 'the internal Engagement id of the field','label' : 'what you want the name to be when display inside Zendesk'},{...},{...}]}"
       }
     }
   }

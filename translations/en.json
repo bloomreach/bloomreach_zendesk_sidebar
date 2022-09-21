@@ -25,6 +25,10 @@
         "label": "Engagement Token",
         "helpText": "Base 64 encoding of your public and private Engagement project keys. Most easily generated using nodejs with the following command from the REPL: console.log(Buffer.from('<public_key>:<private_key>').toString('base64'))"
       },
+      "ENGAGEMENT_IDENTIFIER": {
+        "label": "Identifier holding email value",
+        "helpText": "Bloomreach Engagement Identifier used to query user data."
+      },
       "ENGAGEMENT_PAYLOAD": {
         "label": "Engagement Fields",
         "helpText": "A JSON document describing the fields you want to display. In the form: {'fields' : [{'type': 'segmentation attribute etc','id' : 'the internal Engagement id of the field','label' : 'what you want the name to be when display inside Zendesk'},{...},{...}]} "

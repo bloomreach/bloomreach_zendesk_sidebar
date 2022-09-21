@@ -36,7 +36,7 @@
           l.innerHTML += `<a href="https://${settings.ENGAGEMENT_HOSTNAME}/p/${settings.ENGAGEMENT_PROJECT_NAME}/crm/customers/pages/1?count=20&orderColumn=0&skip=0&query=${requestor_email}" target="_blank" class="br_link"><img src='./engagement.png' alt='launch engagement'/></a>`;
           let payload = {
             customer_ids: {
-              registered: requestor_email,
+              "{{setting.ENGAGEMENT_IDENTIFIER}}": requestor_email,
             },
             attributes: engagement_fields,
           };

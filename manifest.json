@@ -49,6 +49,13 @@
       "required": true
     },
     {
+      "name": "ENGAGEMENT_IDENTIFIER",
+      "type": "text",
+      "secure": false,
+      "required": true,
+      "default": "registered"
+    },
+    {
       "name": "ENGAGEMENT_PAYLOAD",
       "type": "multiline",
       "secure": false,

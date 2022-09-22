@@ -47,7 +47,7 @@
     {
       "name": "ENGAGEMENT_TOKEN",
       "type": "text",
-      "secure": true,
+      "secure": false,
       "required": true
     },
     {
@@ -61,7 +61,13 @@
       "name": "ENGAGEMENT_PAYLOAD",
       "type": "multiline",
       "secure": false,
-      "required": true
+      "required": false
+    },
+    {
+      "name": "ENGAGEMENT_MANAGED_API_URL",
+      "type": "url",
+      "secure": false,
+      "required": false
     }
   ],
   "domainWhitelist": [

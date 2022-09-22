@@ -26,7 +26,6 @@
         .metadata()
         .then((metadata) => {
           settings = metadata.settings;
-          engagement_fields = (JSON.parse(settings.ENGAGEMENT_PAYLOAD)).fields
           return;
         })
         .then(() => {

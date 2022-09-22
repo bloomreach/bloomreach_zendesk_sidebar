@@ -1,5 +1,5 @@
 {
-  "name": "Bloomreach Engagement Zendesk Sidebar",
+  "name": "Bloomreach Engagement",
   "author": {
     "name": "Paul Edwards",
     "email": "support@bloomreach.com",
@@ -15,7 +15,7 @@
       }
     }
   },
-  "version": "1.0.1",
+  "version": "1.1.0",
   "frameworkVersion": "2.0",
   "parameters": [
     {
@@ -34,13 +34,15 @@
       "name": "ENGAGEMENT_HOSTNAME",
       "type": "url",
       "secure": false,
-      "required": true
+      "required": true,
+      "default": "app.exponea.com"
     },
     {
       "name": "ENGAGEMENT_API_HOSTNAME",
       "type": "url",
       "secure": false,
-      "required": true
+      "required": true,
+      "default": "api.exponea.com"
     },
     {
       "name": "ENGAGEMENT_TOKEN",
@@ -49,10 +51,23 @@
       "required": true
     },
     {
+      "name": "ENGAGEMENT_IDENTIFIER",
+      "type": "text",
+      "secure": false,
+      "required": true,
+      "default": "registered"
+    },
+    {
       "name": "ENGAGEMENT_PAYLOAD",
       "type": "multiline",
       "secure": false,
-      "required": true
+      "required": false
+    },
+    {
+      "name": "ENGAGEMENT_MANAGED_API_URL",
+      "type": "url",
+      "secure": false,
+      "required": false
     }
   ],
   "domainWhitelist": [

@@ -47,7 +47,7 @@
     {
       "name": "ENGAGEMENT_TOKEN",
       "type": "text",
-      "secure": false,
+      "secure": true,
       "required": true
     },
     {

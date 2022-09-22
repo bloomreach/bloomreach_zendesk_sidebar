@@ -51,11 +51,11 @@
             req = {
               url: `${settings.ENGAGEMENT_MANAGED_API_URL}`,
               headers: {
-                Authorization: ` Basic ${settings.ENGAGEMENT_TOKEN}`,
+                Authorization: ` Basic {{setting.ENGAGEMENT_TOKEN}}`,
               },
               contentType: "application/json",
               type: "POST",
-              secure: false,
+              secure: true,
               cors: false,
               data: JSON.stringify(payload)
             }

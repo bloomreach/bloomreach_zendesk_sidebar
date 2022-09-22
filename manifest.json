@@ -15,7 +15,7 @@
       }
     }
   },
-  "version": "1.1.0",
+  "version": "1.2.0",
   "frameworkVersion": "2.0",
   "parameters": [
     {
@@ -46,6 +46,18 @@
     },
     {
       "name": "ENGAGEMENT_TOKEN",
+      "type": "text",
+      "secure": true,
+      "required": true
+    },
+    {
+      "name": "ENGAGEMENT_KEY",
+      "type": "text",
+      "secure": true,
+      "required": true
+    },
+    {
+      "name": "ENGAGEMENT_SECRET",
       "type": "text",
       "secure": true,
       "required": true

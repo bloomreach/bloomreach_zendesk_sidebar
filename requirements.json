@@ -1,0 +1,22 @@
+{
+	"webhooks": {
+		"br_engagement_api": {
+			"authentication": {
+				"add_position": "header",
+		        "data": {
+					"username": "{{ setting.ENGAGEMENT_KEY }}",
+					"password": "{{ setting.ENGAGEMENT_SECRET }}"
+		        },
+				"type": "basic_auth"
+			},
+			"endpoint": "https://{{ setting.ENGAGEMENT_API_HOSTNAME }}/track/v2/projects/{{ setting.ENGAGEMENT_PROJECT }}/customers/events",
+			"http_method": "POST",
+			"name": "Bloomreach API Event tracking endpoint",
+			"request_format": "json",
+			"status": "active",
+			"subscriptions": [
+				"conditional_ticket_events"
+			]
+		}
+	}
+}

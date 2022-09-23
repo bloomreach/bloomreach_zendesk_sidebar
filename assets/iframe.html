@@ -20,6 +20,8 @@
       let engagement_fields = {};
       let fixedResult = {};
       let script_step = "init";
+      let ctx = "";
+      let user_obj = "";
 
       client.invoke("resize", { width: "100%", height: "400px" });
       client
@@ -29,12 +31,18 @@
           return;
         })
         .then(() => {
-          script_step = "Get Requester Email";
-          return client.get("ticket.requester.email");
+          script_step = "Understand Context";
+          return client.context();
+        })
+        .then((context) => {
+          script_step = "Get Requester/User Email";
+          ctx = context.location;
+          user_obj = (ctx === "user_sidebar"?'user.email':'ticket.requester.email');
+          return client.get(user_obj);
         })
         .then((requestor_email_object) => {
           script_step = "Prepare HTML and BR Payload";
-          requestor_email = requestor_email_object['ticket.requester.email']
+          requestor_email = requestor_email_object[user_obj];
           l = document.getElementById("hotlink");
           l.innerHTML += `<a href="https://${settings.ENGAGEMENT_HOSTNAME}/p/${settings.ENGAGEMENT_PROJECT_NAME}/crm/customers/pages/1?count=20&orderColumn=0&skip=0&query=${requestor_email}" target="_blank" class="br_link"><b>Full Customer Profile</b></a>`;
 

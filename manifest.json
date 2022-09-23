@@ -12,6 +12,10 @@
       "ticket_sidebar": {
         "url": "assets/iframe.html",
         "flexible": true
+      },
+      "user_sidebar": {
+        "url": "assets/iframe.html",
+        "flexible": true
       }
     }
   },
@@ -70,14 +74,14 @@
       "default": "registered"
     },
     {
-      "name": "ENGAGEMENT_PAYLOAD",
-      "type": "multiline",
+      "name": "ENGAGEMENT_MANAGED_API_URL",
+      "type": "url",
       "secure": false,
       "required": false
     },
     {
-      "name": "ENGAGEMENT_MANAGED_API_URL",
-      "type": "url",
+      "name": "ENGAGEMENT_PAYLOAD",
+      "type": "multiline",
       "secure": false,
       "required": false
     }

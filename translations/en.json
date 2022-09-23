@@ -37,13 +37,13 @@
         "label": "Identifier holding email value",
         "helpText": "Bloomreach Engagement Identifier used to query user data."
       },
-      "ENGAGEMENT_PAYLOAD": {
-        "label": "Engagement Fields",
-        "helpText": "A JSON document describing the fields you want to display. In the form: {'fields' : [{'type': 'segmentation attribute etc','id' : 'the internal Engagement id of the field','label' : 'what you want the name to be when display inside Zendesk'},{...},{...}]}"
-      },
       "ENGAGEMENT_MANAGED_API_URL": {
-        "label": "Engagement Managed Endpoint API URL",
+        "label": "Engagement Managed Endpoint API URL (recommended)",
         "helpText": "The full URL managed endpoint API returning JSON object."
+      },
+      "ENGAGEMENT_PAYLOAD": {
+        "label": "Engagement Fields (deprecated)",
+        "helpText": "Use if no Managed Endpoint API not available. A JSON document describing the fields you want to display. In the form: {'fields' : [{'type': 'segmentation attribute etc','id' : 'the internal Engagement id of the field','label' : 'what you want the name to be when display inside Zendesk'},{...},{...}]}"
       }
     }
   }

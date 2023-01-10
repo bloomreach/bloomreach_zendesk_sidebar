@@ -27,7 +27,7 @@ Or anything which can be accessed via the Bloomreach Engagement Customer API.
 1) Input your engagement project id - this can be found in the project settings > project_token area of your Engagement project.
 2) Input your engagement hostname. This is the domain of your Engagement admin interface - e.g. demo_project.exponea.com  
 3) Input your engagement API hostname. This is available at project settings > api Base URL.
-4) In Engagement, generate an API keypair for a private group with read-only access to Managed Endpoint API and all the data fields you are interested in. Turn these into a base 64 encoded token. An easy way to achieve this is to start JS console in browser and run: ```btoa('<key_name>:<key_secret>');``` - put this value into the Engagement_token field
+4) In Engagement, generate an API keypair for a private group with read-only access to Managed Endpoint API and all the data fields you are interested in.
 5) The final thing to do is to configure the fields you would like to display. You have 2 options here:
 6) Use Managed Endpoint API - configured in [BR Engagement UI](https://documentation.bloomreach.com/engagement/reference/managed-endpoints-api). Make sure the API group configured has access to Managed Endpoint API. Don't forget to enable the Managed Endpoint API and use the URL provided for this endpoint into Engagement Managed Endpoint API URL field. The Managed API payload can be fully custom and looks like this:
 ```

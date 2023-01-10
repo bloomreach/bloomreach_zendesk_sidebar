@@ -56,11 +56,10 @@
           payload.customer_ids[settings.ENGAGEMENT_IDENTIFIER || 'registered']=requestor_email;
 
           if (settings.ENGAGEMENT_MANAGED_API_URL) {
+            let url = `${settings.ENGAGEMENT_MANAGED_API_URL}`;
+            url = url.replace('://','://{{ setting.ENGAGEMENT_KEY}}:{{ setting.ENGAGEMENT_SECRET }}@');
             req = {
-              url: `${settings.ENGAGEMENT_MANAGED_API_URL}`,
-              headers: {
-                Authorization: `Basic {{ setting.ENGAGEMENT_TOKEN }}`,
-              },
+              url: url,
               contentType: "application/json",
               type: "POST",
               secure: true,
@@ -77,10 +76,7 @@
 
               req = 
                 {
-                  url: `https://${settings.ENGAGEMENT_API_HOSTNAME}/data/v2/projects/${settings.ENGAGEMENT_PROJECT}/customers/attributes`,
-                  headers: {
-                    Authorization: `Basic {{ settings.ENGAGEMENT_TOKEN }}`,
-                  },
+                  url: `https://{{ setting.ENGAGEMENT_KEY}}:{{ setting.ENGAGEMENT_SECRET }}@${settings.ENGAGEMENT_API_HOSTNAME}/data/v2/projects/${settings.ENGAGEMENT_PROJECT}/customers/attributes`,
                   contentType: "application/json",
                   type: "POST",
                   secure: true,

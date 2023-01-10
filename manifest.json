@@ -1,7 +1,7 @@
 {
   "name": "Bloomreach Engagement",
   "author": {
-    "name": "Paul Edwards",
+    "name": "Bloomreach",
     "email": "support@bloomreach.com",
     "url": "https://www.bloomreach.com"
   },
@@ -19,21 +19,9 @@
       }
     }
   },
-  "version": "1.2.2",
+  "version": "1.2.3",
   "frameworkVersion": "2.0",
   "parameters": [
-    {
-      "name": "ENGAGEMENT_PROJECT",
-      "type": "text",
-      "secure": false,
-      "required": true
-    },
-    {
-      "name": "ENGAGEMENT_PROJECT_NAME",
-      "type": "text",
-      "secure": false,
-      "required": true
-    },
     {
       "name": "ENGAGEMENT_HOSTNAME",
       "type": "url",
@@ -42,17 +30,23 @@
       "default": "app.exponea.com"
     },
     {
+      "name": "ENGAGEMENT_PROJECT_NAME",
+      "type": "text",
+      "secure": false,
+      "required": true
+    },
+    {
+      "name": "ENGAGEMENT_PROJECT",
+      "type": "text",
+      "secure": false,
+      "required": true
+    },
+    {
       "name": "ENGAGEMENT_API_HOSTNAME",
       "type": "url",
       "secure": false,
       "required": true,
       "default": "api.exponea.com"
-    },
-    {
-      "name": "ENGAGEMENT_TOKEN",
-      "type": "text",
-      "secure": true,
-      "required": true
     },
     {
       "name": "ENGAGEMENT_KEY",
